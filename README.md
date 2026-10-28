@@ -6,17 +6,28 @@ Explainable grocery recommendations, with MCP integration.
 
 [![CI](https://github.com/Fernise/gurkerl-recommender-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernise/gurkerl-recommender-mcp/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-52646b)](LICENSE)
+[![Built with Codex](https://img.shields.io/badge/Built_with-Codex-5B5BD6)](#development-approach)
 
 Nutrition- and budget-aware grocery ranking, offer monitoring and weekly digests, with offline samples and optional MCP/Telegram integrations.
 
 **Technology:** Python · SQLite · MCP · Optional Node.js bridge · Telegram
 
+[Overview](#what-it-does) · [Quick start](#quick-start) · [Architecture](docs/ARCHITECTURE.md) · [Verification](docs/VERIFICATION.md)
+
 ## What it does
+
+For developers and grocery shoppers experimenting with explainable recommendations and configurable weekly digests.
 
 - Explainable scoring for nutrition, price, promotions and close-to-expiry offers.
 - A dependency-free sample recommender and configurable monitoring pipeline.
 - Weekly plans/digests, notification deduplication and SQLite state.
 - An optional local MCP server and clients for authenticated external MCP services.
+
+## Offline example
+
+![Actual output from the bundled grocery-ranking sample](docs/assets/sample-output.png)
+
+Captured from the bundled offline sample. Products and prices are illustrative; each recommendation exposes its scoring reasons.
 
 ## Project status
 
@@ -72,6 +83,12 @@ The suite uses sample products and mocked external responses. Authenticated groc
 - [Security policy](SECURITY.md)
 - [Contribution guidance](CONTRIBUTING.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
+
+## Development approach
+
+Created and directed by **[Fernando · @Fernise](https://github.com/Fernise)** using agentic programming with **OpenAI Codex**. Product direction, requirements and final decisions are the author’s; coding agents contributed to implementation, refactoring, documentation and testing.
+
+See the [verification record](docs/VERIFICATION.md) for completed checks and known limitations.
 
 ## License
 
