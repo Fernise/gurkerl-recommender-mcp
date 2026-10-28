@@ -1,14 +1,8 @@
-![Gurkerl Recommender MCP — Explainable grocery recommendations, with MCP integration.](docs/assets/banner.svg)
-
 # Gurkerl Recommender MCP
 
-Explainable grocery recommendations, with MCP integration.
+Nutrition- and budget-aware grocery ranking, offer monitoring and weekly digests, with offline samples and optional MCP/Telegram integrations.
 
 [![CI](https://github.com/Fernise/gurkerl-recommender-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernise/gurkerl-recommender-mcp/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-52646b)](LICENSE)
-[![Built with Codex](https://img.shields.io/badge/Built_with-Codex-5B5BD6)](#development-approach)
-
-Nutrition- and budget-aware grocery ranking, offer monitoring and weekly digests, with offline samples and optional MCP/Telegram integrations.
 
 **Technology:** Python · SQLite · MCP · Optional Node.js bridge · Telegram
 
@@ -83,12 +77,6 @@ The suite uses sample products and mocked external responses. Authenticated groc
 - [Security policy](SECURITY.md)
 - [Contribution guidance](CONTRIBUTING.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
-
-## Development approach
-
-Created and directed by **[Fernando · @Fernise](https://github.com/Fernise)** using agentic programming with **OpenAI Codex**. Product direction, requirements and final decisions are the author’s; coding agents contributed to implementation, refactoring, documentation and testing.
-
-See the [verification record](docs/VERIFICATION.md) for completed checks and known limitations.
 
 ## License
 
