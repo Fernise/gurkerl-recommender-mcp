@@ -1,0 +1,21 @@
+{
+  "profile_path": "profile.example.json",
+  "database_path": "data/gurkerl_public.sqlite3",
+  "recommendation_limit": 15,
+  "notification_threshold": 60,
+  "notify_only_new_products": true,
+  "source": {
+    "type": "gurkerl_public",
+    "urls": [
+      "https://www.gurkerl.at/rette-lebensmittel",
+      "https://www.gurkerl.at/aktionen"
+    ],
+    "enrich_details": false,
+    "enrich_limit": 8
+  },
+  "notifier": {
+    "type": "console",
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "chat_id_env": "TELEGRAM_CHAT_ID"
+  }
+}

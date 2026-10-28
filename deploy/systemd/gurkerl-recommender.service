@@ -1,0 +1,10 @@
+[Unit]
+Description=Gurkerl recommender monitor
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/gurkerl_mcp
+EnvironmentFile=/opt/gurkerl_mcp/.env
+ExecStart=/usr/bin/python3 -B -m gurkerl_recommender.monitor_cli --config config.telegram.json

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0"
+  },
+  "name": "gurkerl-recommender-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module"
+}

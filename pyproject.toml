@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=84.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gurkerl-recommender"
+version = "0.1.0"
+description = "Nutrition-aware Gurkerl shopping recommender"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.0.0,<2"]
+
+[project.scripts]
+gurkerl-recommend = "gurkerl_recommender.cli:main"
+gurkerl-monitor = "gurkerl_recommender.monitor_cli:main"
+gurkerl-mcp = "gurkerl_recommender.gurkerl_mcp_cli:main"
+gurkerl-debug = "gurkerl_recommender.debug_cli:main"
+gurkerl-telegram = "gurkerl_recommender.telegram_cli:main"
+gurkerl-weekly = "gurkerl_recommender.weekly_cli:main"
+gurkerl-weekly-digest = "gurkerl_recommender.weekly_digest_cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+
+[tool.setuptools.packages.find]
+include = ["gurkerl_recommender*"]

@@ -1,0 +1,29 @@
+{
+  "goals": {
+    "high_protein": true,
+    "low_sugar": true,
+    "body_recomposition": true,
+    "gain_weight_slightly": true,
+    "lose_fat": true
+  },
+  "nutrition_targets": {
+    "min_protein_per_100g": 10,
+    "max_sugar_per_100g": 6,
+    "prefer_calories_min": 80,
+    "prefer_calories_max": 260
+  },
+  "shopping_preferences": {
+    "prefer_save_food": true,
+    "prefer_promotions": true,
+    "max_expires_in_days_for_meat": 2,
+    "needs_freezer_plan_for_expiring_meat": true
+  },
+  "category_preferences": {
+    "high_priority": ["meat", "fish", "dairy", "eggs", "legumes"],
+    "medium_priority": ["grains", "vegetables", "fruit"],
+    "low_priority": ["snacks", "drinks", "sweets"]
+  },
+  "disliked_brands": [],
+  "liked_brands": [],
+  "never_buy_keywords": ["sugary drink", "candy", "ab dem 8. monat", "baby"]
+}
